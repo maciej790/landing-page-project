@@ -1,0 +1,19 @@
+//imports
+@import "_header";
+@import "_variables";
+@import "_about";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $josefin_sans;
+  font-size: 15px;
+
+  .wrapper {
+    width: 100%;
+  }
+}
