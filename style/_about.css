@@ -1,0 +1,29 @@
+.about {
+  width: 90%;
+  margin-top: 130px;
+}
+
+.about .about__img {
+  width: 10%;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+.about .about__img .about__img--mobile, .about .about__img .about__img--desktop {
+  width: 100%;
+}
+
+.about .about__title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.about .about__description {
+  margin-top: 30px;
+  text-align: center;
+  line-height: 150%;
+  font-size: 18px;
+  color: dimgray;
+}
