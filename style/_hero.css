@@ -1,0 +1,18 @@
+.hero .hero__title {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  position: relative;
+  border: 3px solid white;
+  top: 25%;
+}
+
+.hero .hero__title .hero__title--p {
+  width: 70%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: left;
+}

@@ -1,3 +1,4 @@
+@import url(c:\Users\mysko\OneDrive\Pulpit\front-end-mentor\style\_hero.css);
 .header {
   width: 100%;
   height: 700px;
@@ -9,12 +10,10 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  background-color: orange;
 }
 
 .header .header__nav {
   width: 100%;
-  height: auto;
   padding: 0 20px 0 20px;
   display: flex;
   flex-direction: column;
@@ -44,13 +43,42 @@
   }
 }
 
-.header .header__nav .header__items {
+.header .header__nav .header__items .header__items--a {
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+
+.header .header__nav .header__items .header__items--close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
   display: none;
 }
 
 @media (max-width: 376px) {
+  .header .header__nav .header__items .header__items--close {
+    display: block;
+  }
+}
+
+@media (max-width: 376px) {
   .header .header__nav .header__items {
+    width: 100%;
+    min-height: 100vh;
+    z-index: 100;
     position: fixed;
+    top: -100vh;
+    left: 0;
+    background-color: black;
+    text-align: center;
+    line-height: 100px;
+    padding: 50px 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out;
   }
 }
 
@@ -68,7 +96,8 @@
 .header .header__title .header__title--p {
   width: 70%;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 60px;
+  font-size: 40px;
+  text-transform: uppercase;
   text-align: left;
 }
 
@@ -92,6 +121,7 @@
   text-align: center;
   margin-top: 50px;
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 .about .about__description {
@@ -154,6 +184,60 @@
   outline: none;
   background-color: transparent;
   border: 2px solid black;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.creations .creations__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  color: white;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer .footer__links {
+  list-style-type: none;
+}
+
+.footer .footer__links .footer__link--a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.footer .footer__links .footer__link--a .copy {
+  color: dimgray;
+}
+
+.stickyTop {
+  background-color: black;
+  position: fixed;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  top: -100px;
+  left: 0;
+  z-index: 100;
+  transform: translateY(100px);
+  transition: all 0.7s ease-in-out;
+}
+
+.showMenu {
+  transform: translateY(100vh) rotate(360deg);
+  transition: transform 0.5s ease-in-out;
 }
 
 * {

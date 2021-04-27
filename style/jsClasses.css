@@ -1,0 +1,11 @@
+.stickyTop {
+  background-color: black;
+  position: fixed;
+  height: 60px;
+  line-height: 60px;
+  top: -100px;
+  left: 0;
+  z-index: 100;
+  transform: translateY(100px);
+  transition: all 0.7s ease-in-out;
+}
